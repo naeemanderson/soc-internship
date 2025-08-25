@@ -17,4 +17,4 @@ This repository documents my hands-on work during a cybersecurity internship, co
 - Log analysis (Windows & SIEM)  
 - Threat intelligence research (VirusTotal, AbuseIPDB)  
 - Phishing detection & response  
-- MITRE ATT&CK mapping  
+- MITRE ATT&CK mapping  . .
