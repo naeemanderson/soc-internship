@@ -16,30 +16,37 @@ Compare the results of scanning a Windows 10 VM using Tenable with **unauthentic
 1. Created a Windows 10 VM in Azure  
    - Used **strong credentials**   
    - Disabled Windows Firewall for testing  
-   - Applied registry key to allow remote admin access:  
+   - Applied registry key to allow remote admin access  
 
+---
 
+## Scan Setup
 
-### Scan Setup
-Steps Taken
+### **Unauthenticated Scan**
+- No credentials  
+- Exported results  
+- Scan Duration: 9 mins  
+[View PDF](https://github.com/naeemanderson/soc-internship/blob/main/windows-unauth-scan.png%20.pdf?raw=true)
 
-Ran Unauthenticated Scan
+---
 
-No credentials
+### **Authenticated Scan**
+- Added valid credentials  
+- Exported results  
+- Scan Duration: 23 mins  
+![Authenticated Scan](https://github.com/naeemanderson/soc-internship/blob/main/windows-auth-scan.png)
 
-Exported results
-
-Duration: X mins
-image
-
-
-Ran Authenticated Scan
-
-Added valid credentials
-
-Exported results
-
-Duration: Y mins
-image
+---
 
 Deleted VM and cleaned up Azure resources
+
+---
+
+## 📝 Conclusion / Key Takeaways
+- **Authenticated scans provide more detailed results** because they can access the system internally, revealing vulnerabilities that unauthenticated scans cannot.  
+- **Scan duration is longer** for authenticated scans, but the extra time is worthwhile for the richer data.  
+- **Unauthenticated scans are useful for external assessments** or quick checks, but they can miss critical vulnerabilities.  
+- **SOC relevance:** Authenticated scans help analysts prioritize risks and respond faster because the results are more accurate and complete.  
+
+> In practice, a combination of both scan types is often recommended: start with an unauthenticated scan for baseline insights, then perform authenticated scans for a deeper dive.
+
