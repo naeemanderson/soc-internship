@@ -1,0 +1,34 @@
+# 🖥️ Scanning a Windows VM: Authenticated vs. Unauthenticated
+
+## 🎯 Objective
+Compare the results of scanning a Windows 10 VM using Tenable with **unauthenticated** vs **authenticated** credentials. Understand the differences in findings, scan duration, and why authenticated scans are more valuable in a SOC context.  
+
+---
+
+## 🛠️ Tools Used
+- **Azure** (for hosting the Windows 10 Virtual Machine)  
+- **Tenable Vulnerability Management** (scanner)  
+- **PowerShell** (to configure VM registry key)  
+
+---
+
+## ⚙️ Lab Setup
+1. Created a Windows 10 VM in Azure  
+   - Used **strong credentials** (not labuser/Cyberlab123!)  
+   - Disabled Windows Firewall for testing  
+   - Applied registry key to allow remote admin access:  
+
+
+
+
+### Scan Setup
+Unauthenticated vs Authenticated
+![Unauthenticated Scan Setup]
+![Authenticated Scan Setup](./images/auth-scan-summary.png)
+
+### Results Overview
+- Unauthenticated Findings:
+![Unauthenticated Findings](./images/unauth-finding.png)
+
+- Authenticated Findings:
+![Authenticated Findings](./images/auth-finding.png)
