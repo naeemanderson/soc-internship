@@ -14,21 +14,32 @@ Compare the results of scanning a Windows 10 VM using Tenable with **unauthentic
 
 ## ⚙️ Lab Setup
 1. Created a Windows 10 VM in Azure  
-   - Used **strong credentials** (not labuser/Cyberlab123!)  
+   - Used **strong credentials**   
    - Disabled Windows Firewall for testing  
    - Applied registry key to allow remote admin access:  
 
 
 
-
 ### Scan Setup
-Unauthenticated vs Authenticated
-![Unauthenticated Scan Setup]
-![Authenticated Scan Setup](./images/auth-scan-summary.png)
+Steps Taken
 
-### Results Overview
-- Unauthenticated Findings:
-![Unauthenticated Findings](./images/unauth-finding.png)
+Ran Unauthenticated Scan
 
-- Authenticated Findings:
-![Authenticated Findings](./images/auth-finding.png)
+No credentials
+
+Exported results
+
+Duration: X mins
+image
+
+
+Ran Authenticated Scan
+
+Added valid credentials
+
+Exported results
+
+Duration: Y mins
+image
+
+Deleted VM and cleaned up Azure resources
