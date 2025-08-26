@@ -6,7 +6,7 @@ Hands-on SOC internship labs and case studies (Windows scanning, phishing analys
 This repository documents my hands-on work during a cybersecurity internship, covering topics like threat intelligence, vulnerability scanning, log analysis, and phishing investigations.  
 
 ## 📂 Labs & Case Studies
-- [Scanning Windows: Authenticated vs Unauthenticated](./windows-scan-auth-vs-unauth.md)
+- [Scanning Windows: Authenticated vs Unauthenticated [Click here to view Windows VM Scan Lab](windows-scan-auth-vs-unauth.md)
 - [Phishing Email Analysis](./phishing-analysis.md)
 - [IOC Research](./ioc-research.md)
 - [MITRE ATT&CK Mapping](./mitre-mapping.md)
