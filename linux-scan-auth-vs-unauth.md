@@ -24,25 +24,27 @@ Compare the results of scanning an Ubuntu 22 VM in Azure using Tenable with **un
 ## 📌 Steps Taken
 
 ### 1. Unauthenticated Scan
+
 - Logged into Tenable  
 - Created Basic Network Scan  
-- Scanner: **Internal Scanner (LOCAL-SCAN-ENGINE-01)**  
-- Target: VM private IP (preferred) or public IP if needed  
-- Discovery:  
-  - [x] Ping the remote host  
-  - [x] Use fast network discovery  
-- Credentials: left blank  
+- Credentials left blank  
 
-📸 *Paste screenshot of Unauthenticated scan setup*  
-📸 *Paste screenshot of Unauthenticated findings*  
+📸 Unauthenticated scan results:  
+![Linux Unauthenticated Scan Results](./images/linux-unauth-results.png)
 
 - Exported results  
-- Duration: X mins  
+- Duration: 6 mins  
 
 ---
 
 ### 2. Authenticated Scan
-- Enabled root login on the Ubuntu VM:  
+
+- Enabled root login on Ubuntu  
+- Configured Tenable scan with valid credentials  
+- Reran scan  
+
+📸 Authenticated scan results:  
+![Linux Authenticated Scan Results](./images/linux-auth-results.png)
 
 ```bash
 sudo passwd root
@@ -55,12 +57,13 @@ Edited same Tenable scan → added valid root credentials
 
 Reran the scan
 
+📸 Authenticated scan results:  
+![Linux Authenticated Scan Results](./images/linux-auth-results.png)
+
 Exported results
 
-Duration: Y mins
+Duration: 5 mins
 
-📸 Paste screenshot of Authenticated scan setup
-📸 Paste screenshot of Authenticated findings
 
 3. Cleanup
 
@@ -70,7 +73,18 @@ Verified resource group cleanup
 
 | Metric                | Unauthenticated | Authenticated  |
 | --------------------- | --------------- | -------------- |
-| Total Vulnerabilities | (paste number)  | (paste number) |
-| Critical/High         | (paste number)  | (paste number) |
-| Scan Duration         | X mins          | Y mins         |
+| Total Vulnerabilities | (19)            | (59)           |
+| Critical              | (0)             | (0)            |
+| High                  | (0)             | (1)            |
+| Scan Duration         | 6 mins          | 5 mins         |
 | Visibility            | Surface only    | Full system    |
+
+
+📖 Key Takeaways
+
+Unauthenticated scans = attacker’s external perspective
+
+Authenticated scans = deeper visibility into misconfigurations & patch levels
+
+SOC analysts need both perspectives, but authenticated scans are essential for accurate remediation
+
