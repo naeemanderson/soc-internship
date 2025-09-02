@@ -13,7 +13,8 @@ This repository documents my hands-on work during a cybersecurity internship, co
 - [Using a DISA STIG Scan Template
 - [Agent Based Monitoring: Windows
 - [Agent Based Monitoring: Linux 
-- [Vulnerability Recasting and Exceptions [https://github.com/naeemanderson/soc-internship/blob/main/Recasting%20%26%20Accepting%20Vulnerabilities%20in%20Tenable
+- [Vulnerability Recasting and Exceptions - [Recasting & Accepting Vulnerabilities in Tenable](./Recasting%20%26%20Accepting%20Vulnerabilities%20in%20Tenable.md)
+
 - [Discovery Scan: Entire Cyber Range Subnet
 
 
