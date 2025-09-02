@@ -1,0 +1,45 @@
+# 🔧 Recasting & Accepting Vulnerabilities in Tenable
+
+## Overview
+This lab demonstrates how to manage vulnerabilities in **Tenable.io** by using **Recast Rules** and **Accepted Vulnerabilities**.  
+These tools allow analysts to adjust the risk posture of findings without modifying the actual scan results.  
+
+---
+
+## Steps
+
+1. **Log into Tenable**  
+   Navigate to [https://cloud.tenable.com](https://cloud.tenable.com) → Vulnerability Management.
+
+2. **Select a Scan**  
+   - Go to **Scans** in the menu.  
+   - Choose one of your scans that has vulnerabilities.  
+   - Select **See All Details**.  
+
+3. **Choose a Vulnerability**  
+   - Select one of the findings.  
+   - Copy the **PluginID** of the vulnerability.
+
+4. **Access Settings**  
+   - From the menu, click **Settings**.  
+   - Under **Settings**, choose **Recast Rules**.  
+
+5. **Add a Rule**  
+   - Click **+ Add Rule** in the upper left.  
+   - Configure a recast rule or accept the vulnerability based on PluginID.  
+   - Save your changes.  
+
+---
+
+## Key Notes
+- **Recast Rules**: Change the severity (e.g., marking a *High* vuln as *Medium*).  
+- **Accept Rules**: Mark a vulnerability as accepted risk (e.g., known issue that won’t be remediated).  
+- Rules only apply on **future scans**. Run a re-scan to observe changes.  
+
+---
+
+## Takeaways
+- Recasting/accepting does not “fix” a vulnerability, but it allows organizations to:  
+  - Prioritize remediation efforts,  
+  - Document risk acceptance,  
+  - Prevent noise in reporting.  
