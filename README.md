@@ -12,8 +12,8 @@ This repository documents my hands-on work during a cybersecurity internship, co
 - [Scanning Linux: Authenticated vs Unauthenticated [Linux VM Scan: Authenticated vs Unauthenticated](./linux-scan-auth-vs-unauth.md)
 - [Using a DISA STIG Scan Template
 - [Agent Based Monitoring: Windows
-- [Agent Based Monitoring: Linux
-- [Vulnerability Recasting and Exceptions
+- [Agent Based Monitoring: Linux 
+- [Vulnerability Recasting and Exceptions [https://github.com/naeemanderson/soc-internship/blob/main/Recasting%20%26%20Accepting%20Vulnerabilities%20in%20Tenable
 - [Discovery Scan: Entire Cyber Range Subnet
 
 
