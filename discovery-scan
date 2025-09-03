@@ -36,6 +36,13 @@ Discovery scans are used to identify live hosts, open ports, and network service
 
 ---
 
+## Screenshots
+
+### Discovery Scan Results
+![Discovery Scan Results](./discovery-scan.png)
+
+---
+
 ## Key Notes
 - Discovery scans **do not perform full vulnerability checks**.  
 - They are lightweight and primarily used for **asset inventory and scoping**.  
@@ -47,3 +54,4 @@ Discovery scans are used to identify live hosts, open ports, and network service
 - Discovered assets can help scope **authenticated vs unauthenticated scans** later.  
 - Tagging assets improves automation and reporting within Tenable.  
 - Discovery scans reduce blind spots by showing you **what’s really on the network**.
+
