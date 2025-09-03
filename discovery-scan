@@ -1,0 +1,49 @@
+# 🌐 Discovery Scan for Entire Cyber Range Subnet
+
+## Overview
+This lab demonstrates how to perform a **Discovery Scan** in Tenable.io across a subnet range.  
+Discovery scans are used to identify live hosts, open ports, and network services before deeper vulnerability scans.
+
+---
+
+## Steps
+
+1. **Create New Discovery Scan**
+   - In Tenable.io, go to **Scans → New Scan**.
+   - Select **Discovery** as the scan type.
+
+2. **Configure Targets**
+   - Enter the following subnet:  
+     ```
+     10.0.0.0/21
+     ```
+
+3. **Launch the Scan**
+   - Start the scan and wait for results to populate.
+
+4. **Review Results**
+   - Observe which assets were discovered.
+   - Take note of:  
+     - **IP addresses**  
+     - **Operating systems**  
+     - **Open ports / services detected**
+
+5. **Think About Tagging**
+   - Consider how discovered assets might be grouped/tagged for future scans:  
+     - By subnet  
+     - By operating system  
+     - By asset type (server, workstation, VM, etc.)
+
+---
+
+## Key Notes
+- Discovery scans **do not perform full vulnerability checks**.  
+- They are lightweight and primarily used for **asset inventory and scoping**.  
+- This step is often the **first stage of vulnerability management** in a SOC workflow.  
+
+---
+
+## Takeaways
+- Discovered assets can help scope **authenticated vs unauthenticated scans** later.  
+- Tagging assets improves automation and reporting within Tenable.  
+- Discovery scans reduce blind spots by showing you **what’s really on the network**.
