@@ -9,9 +9,9 @@ The exercise highlights the **full vulnerability lifecycle** used in SOC and vul
 
 ## Steps
 
-### 1. Provision Windows 10 VM 
+### 1. Provision Windows 10 VM
 - Create a Windows 10 Pro (Gen2) VM in Azure.  
-- Use a **strong username/password** (do not use `labuser/Cyberlab123!`).  
+- Use a **strong username/password** 
 - Disable Windows Firewall (`wf.msc`).  
 
 Enable remote administrative access with this PowerShell command (run **as Administrator**):  
@@ -27,9 +27,8 @@ Enter VM credentials for authentication.
 
 Launch the scan and export results.
 
-📸 Screenshot:
-
-win10-auth-before.png → Scan summary before remediation.
+### 🔎 Before Remediation
+[![Initial Scan Results](./win-10-scan1.png)](./win-10-scan1.png)
 
 3. Introduce Vulnerabilities
 Manually add common vulnerabilities to simulate a real environment:
@@ -42,20 +41,10 @@ Install insecure software → Example: Firefox (older version).
 
 Restart the VM.
 
-📸 Optional Screenshots:
+### ⚠️ After Vulnerabilities Introduced
+[![After Vulnerabilities Introduced](./win-10-scan2.png)](./win-10-scan2.png)
 
-win10-vuln-added.png → SMBv1 enabled or insecure software installed.
-
-4. Re-run Authenticated Scan
-Run another scan in Tenable.io.
-
-Observe new vulnerabilities detected.
-
-📸 Screenshot:
-
-win10-scan-after-vuln.png → Scan results after introducing vulnerabilities.
-
-5. Remediation
+4. Remediation & Rescan
 Apply all pending Windows Updates.
 
 Disable SMBv1.
@@ -66,41 +55,23 @@ Uninstall insecure software (appwiz.cpl).
 
 Restart VM.
 
-📸 Screenshot:
+Run a final authenticated scan.
 
-win10-remediation.png → Proof of updates installed or SMBv1 disabled.
-
-6. Validate with Rescan
-Launch another authenticated scan.
-
-Compare results before and after remediation.
-
-📸 Screenshot:
-
-win10-auth-after.png → Scan summary showing reduced vulnerabilities.
+### ✅ After Remediation
+[![After Remediation](./win-10-scan3.png)](./win-10-scan3.png)
 
 📊 Vulnerability Comparison
-Stage	Critical	High	Medium	Low
-Before Remediation	?	?	?	?
-After Introducing Vulns	?	?	?	?
-After Remediation	?	?	?	?
+Stage	                        Critical	High	Medium	Low
+Before Remediation     Scan 1 |  (3)  | (5) |  (20) |  (3) |
+After Vulnerabilities  Scan 2 |	 (28) | (12)|  (13) |  (2) |
+After Remediation      Scan 3 |  (0 ) |  (5)|  (20) |  (3) |
 
-(Fill in actual numbers from your Tenable scan reports.)
-
-Screenshots
-🔎 Before Remediation
-
-⚠️ Vulnerabilities Introduced
-
-🛠️ Remediation
-
-✅ After Remediation
 
 Key Takeaways
 Authenticated scans provide deep system visibility compared to unauthenticated scans.
 
-Introducing vulnerabilities helps simulate real-world attack surfaces.
+Intentionally introducing vulnerabilities simulates real-world attack surfaces.
 
 The remediation cycle = Detect → Analyze → Fix → Validate.
 
-This workflow mirrors what SOC analysts and vulnerability management teams do daily.
+This workflow mirrors daily SOC analyst & vulnerability management tasks.
