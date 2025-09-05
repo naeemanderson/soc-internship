@@ -15,7 +15,7 @@ This repository documents my hands-on work during a cybersecurity internship, co
 - [Agent Based Monitoring: Linux 
 - [Vulnerability Recasting and Exceptions- [Recasting & Accepting Vulnerabilities in Tenable](./Recasting%20%26%20Accepting%20Vulnerabilities%20in%20Tenable.md)
 - [Discovery Scan: Entire Cyber Range Subnet- [Discovery Scan for Entire Subnet](./discovery-scan-subnet.md)
-- [Manual Vulnerability Remediation on Windows-
+- [Manual Vulnerability Remediation on Windows-- [Windows 10 Authenticated Scan & Remediation](./windows10-auth-scan-remediation.md)
 - [Manual Vulnerability Remediation on Linux-
 -  
 
