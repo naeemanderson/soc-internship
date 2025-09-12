@@ -17,7 +17,8 @@ This repository documents my hands-on work during a cybersecurity internship, co
 - [Discovery Scan: Entire Cyber Range Subnet- [Discovery Scan for Entire Subnet](./discovery-scan-subnet.md)
 - [Manual Vulnerability Remediation on Windows-- [Windows 10 Authenticated Scan & Remediation](./windows10-auth-scan-remediation.md)
 - [Manual Vulnerability Remediation on Linux-
-- Programmatic Vulnerability Remediation- [Programmatic Vulnerability Remediation](./Programmatic%20Vulnerability%20Remediation)
+- Programmatic Vulnerability Remediation windows- [Programmatic Vulnerability Remediation](./Programmatic%20Vulnerability%20Remediation
+- [Programmatic Vulnerability Remediation linux](https://github.com/naeemanderson/soc-internship/blob/main/Programmatic%20Vulnerability%20Remediation%20linux)
 
 
 
