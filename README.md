@@ -21,7 +21,7 @@ This repository documents my hands-on work during a cybersecurity internship, co
 - Programmatic Vulnerability Remediation linux-[Programmatic Vulnerability Remediation linux](https://github.com/naeemanderson/soc-internship/blob/main/Programmatic%20Vulnerability%20Remediation%20linux)
 - Implementing a Vulnerability Program-[Implementing a Vulnerability Program](https://github.com/naeemanderson/Implementing-a-Vulnerability-Program)
 - Vulnerability Remediation Windows-2- [![Vulnerability Remediation Windows 2](https://img.shields.io/badge/Vulnerability--Remediation--Windows--2-0078D6?logo=windows&logoColor=white)](https://github.com/naeemanderson/Vulnerability-Remediation-Windows-2)
--Vulnerability-Remediation-Windows-3-[Vulnerability-Remediation-Windows-3](https://github.com/naeemanderson/Vulnerability-Remediation-Windows-3)
+- Vulnerability-Remediation-Windows-3-[Vulnerability-Remediation-Windows-3](https://github.com/naeemanderson/Vulnerability-Remediation-Windows-3)
 
 
 
